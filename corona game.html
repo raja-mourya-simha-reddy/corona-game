@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>		
+	
+
+		<title> ESCAPE | CORONAVIRUS</title>
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="corona_game.css">
+	</head>
+	<body>
+		<img src="https://i.bb.co/HH3YVG2/karakter.png" id="man">
+		<canvas id="canvas"></canvas>
+		
+		<div id="commandes">
+			<div class="btn shield" id ="invincible" onclick="invincible()" > sheild</div>
+			<div class="btn shoot" onclick="shoot()" >shoot</div>
+			<div class="btn slow_down" onclick="moveright()">slow down</div>
+		</div>
+		<div id="beginning">
+			<h1 align="center">ESCAPE | CORONAVIRUS</h1>
+			<p>
+				<span style="font-size:1.3em">Esacpe yourself from virus</span> <br><br><br>
+				dodge as many viruses as possible !<br><br>
+				you will lose 10 health if you touch the virus !<br><br>
+				you can use the power-ups at the bottom when they are blue!<br><br>
+				virus speed increases with time!
+			</p>
+			<div class="btnplay play" onClick="start()">PLAY</div>
+			<div style="display:flex;flex-direction:row;">
+			<div class="btnplay hard" id="hard" onclick="hard()">hard mode</div>
+			<div class="btnplay easy" id="easy" onClick="easy()">easy mode<div/></div>
+			</div>
+			</div>
+		<script type="text/javascript" src="corona_game_copy.js"></script>
+	</body>
+</html>

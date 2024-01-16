@@ -1,0 +1,82 @@
+body {	 
+	 margin:0;padding:0;
+	 font-family: 'Fjalla One';	 
+	 background-repeat: no-repeat;	
+}
+
+#beginning{
+	position:absolute;
+	left:350px;
+	top:0;
+	width:50%;
+	height:100%;
+    background-color: teal;
+	z-index:3;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+}
+h1{
+	padding:10px;
+	border:5px dashed white;
+	width:310px;
+	font-size:1.5em;
+}
+.hard:hover{background-color:red;
+            cursor: pointer;}
+.easy:hover{background-color:blue;
+            cursor: pointer;}
+.play:hover{background-color:gold;
+            cursor: pointer;}
+.btnplay{
+	width:100px;
+	height:30px;
+	border:3px solid white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transform:skew(-15deg);
+	animation:movebtn 1s linear infinite;
+}
+@keyframes movebtn {50%{transform:skew(15deg);}}
+
+canvas{
+	background-color:grey;
+     background-image: url("Jack's_Home.png");	
+	position:absolute;
+	z-index:1;
+}
+
+
+#commandes{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display:flex;
+	flex-direction:inline;
+	justify-content:space-around;
+	align-items:center;
+	color:white;
+	 z-index:2;
+}
+.btn{
+	width:100%;
+	height:45px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border:2px solid blue;
+	box-shadow:inset 0 -2px 3px black,inset 0 2px 3px black;
+}
+.shield{
+	background-color:#CF0D0D;
+}
+.shoot{
+	background-color:white;
+	color:black;
+}
+.slow_down{
+	background-color:purple;
+}
